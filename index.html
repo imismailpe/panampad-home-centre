@@ -21,6 +21,7 @@
       padding: 20px;
       text-align: center;
       border-bottom: 2px solid #ffcccb;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     header h1 {
       margin: 0;
@@ -34,7 +35,11 @@
     main {
       padding: 20px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
     }
     section {
       margin-bottom: 20px;
@@ -50,19 +55,30 @@
     }
     .button-container {
       margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     .button {
       display: inline-block;
       text-decoration: none;
-      background-color: #ffeb3b;
-      color: #333;
+      background-color: #007bff;
+      color: #fff;
       padding: 10px 20px;
       border-radius: 5px;
       font-size: 1rem;
-      margin-right: 10px;
       font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: none;
     }
     .button:hover {
+      background-color: #0056b3;
+    }
+    .button.call {
+      background-color: #ffeb3b;
+      color: #333;
+    }
+    .button.call:hover {
       background-color: #ffd700;
     }
     footer {
@@ -71,6 +87,7 @@
       background-color: #ffe6e6;
       border-top: 2px solid #ffcccb;
       font-size: 0.9rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     }
     footer p {
       margin: 5px 0;
@@ -88,6 +105,10 @@
       <p>Welcome to Panampad Home Center! We offer a wide range of products, including household items, utensils, stationery, school supplies, fancy gifts, and small electric appliances. Whether you're shopping for your home or looking for the perfect gift, we have you covered!</p>
     </section>
     <section>
+      <h2>Address</h2>
+      <p>Panampad-Vadamukku Road, Panampad, Kerala 679581</p>
+    </section>
+    <section>
       <h2>Payment Options</h2>
       <p>We accept UPI payments and cash for your convenience.</p>
     </section>
@@ -96,10 +117,11 @@
       <p>We are open from <strong>9:00 AM to 9:00 PM</strong>, Monday to Saturday.</p>
     </section>
     <section>
-      <h2>Visit Us</h2>
+      <h2>Contact Us</h2>
       <div class="button-container">
         <a href="https://maps.app.goo.gl/epqsqeZ7gtwBP2CA6" target="_blank" class="button">Google Maps Location</a>
-        <a href="https://wa.me/your-number-here" target="_blank" class="button" style="background-color: #25d366; color: #fff;">Chat on WhatsApp</a>
+        <a href="https://wa.me/918589830710" target="_blank" class="button" style="background-color: #25d366; color: #fff;">Chat on WhatsApp</a>
+        <a href="tel:+918589830710" class="button call">Call Us</a>
       </div>
     </section>
   </main>
