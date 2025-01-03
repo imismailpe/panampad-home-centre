@@ -53,6 +53,17 @@
     p {
       line-height: 1.6;
     }
+    .photo-gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .photo-gallery img {
+      width: calc(50% - 10px);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+    }
     .button-container {
       margin-top: 20px;
       display: flex;
@@ -101,7 +112,6 @@
   </header>
   <main>
     <section>
-      <h2>About Us</h2>
       <p>Welcome to Panampad Home Center! We offer a wide range of products, including household items, utensils, stationery, school supplies, fancy gifts, and small electric appliances. Whether you're shopping for your home or looking for the perfect gift, we have you covered!</p>
     </section>
     <section>
@@ -115,6 +125,13 @@
     <section>
       <h2>Working Hours</h2>
       <p>We are open from <strong>9:00 AM to 9:00 PM</strong>, Monday to Saturday.</p>
+    </section>
+    <section>
+      <h2>Photos</h2>
+      <div class="photo-gallery">
+        <img src="photo1.jpg" alt="Panampad Home Center - Store Front">
+        <img src="photo2.jpg" alt="Panampad Home Center - Interior View">
+      </div>
     </section>
     <section>
       <h2>Contact Us</h2>
